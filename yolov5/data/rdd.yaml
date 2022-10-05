@@ -1,0 +1,7 @@
+train: datasets/RDD2022/train.txt
+# val: datasets/road2020/val.txt
+# train: datasets/RDD2022/train_noNorway.txt
+val: datasets/RDD2022/val.txt
+# val: datasets/RDD2022/train.txt
+nc: 4
+names: ['D00','D10','D20','D40']
