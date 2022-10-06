@@ -1,5 +1,5 @@
 # ShiYu_SeaView_GRDDC2022
-| model | pretrained weight (google driver) | 
+| model | pretrained weight (google drive) | 
 | :-----| :---- | 
 | YOLOv5x_640 | [YOLOv5x_640] | 
 | YOLOv5x6_1280 | [YOLOv5x6_1280] | 
