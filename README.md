@@ -10,6 +10,11 @@
 | YOLOv5x_1600 | [YOLOv5x_1600] | 
 | YOLOv5m_3200 | [YOLOv5m_3200] | 
 
+# Acknowledgement
+- https://github.com/ultralytics/yolov5
+- https://github.com/WongKinYiu/yolov7
+- https://github.com/open-mmlab/mmdetection
+- 
 
 
 [YOLOv5x_640]: https://drive.google.com/file/d/1nwUIbd_eYiOSLU1hSnwIsqF5HTFXvq02/view?usp=sharing
