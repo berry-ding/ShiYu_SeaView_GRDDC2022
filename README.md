@@ -1,10 +1,10 @@
 # ShiYu_SeaView_CRDDC2022
-# Quick Start
-conda create -n crddc2022 python=3.8
-conda activate crddc2022
-git clone https://github.com/berry-ding/ShiYu_SeaView_GRDDC2022.git
-cd ShiYu_SeaView_GRDDC2022
-following ipynb
+# Quick Start 
+conda create -n crddc2022 python=3.8  
+conda activate crddc2022  
+git clone https://github.com/berry-ding/ShiYu_SeaView_GRDDC2022.git  
+cd ShiYu_SeaView_GRDDC2022  
+following ipynb  
 # Model
 | model | pretrained weight (google drive) | 
 | :-----| :---- | 
