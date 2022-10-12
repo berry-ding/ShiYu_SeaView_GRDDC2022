@@ -10,7 +10,7 @@ pip3 install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio===0.8.2 -f h
 pip install -r yolov5/requirements.txt  
 #official yolov7  
 pip install -r yolov7/requirements.txt  
-#mmdetection v2.25.1  
+#mmdetection v2.25.0  
 pip install openmim    
 mim install mmcv-full  
 mim install mmcls  
