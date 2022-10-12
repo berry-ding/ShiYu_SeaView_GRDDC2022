@@ -7,15 +7,16 @@ cd ShiYu_SeaView_GRDDC2022
 #cuda >= 11.1  
 pip3 install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio===0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html  
 #official yolov5 r6.1  
-pip install -r yolov5/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple  
+pip install -r yolov5/requirements.txt 
+#-i https://pypi.tuna.tsinghua.edu.cn/simple  
 #official yolov7  
-pip install -r yolov7/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple  
+pip install -r yolov7/requirements.txt  
 #mmdetection v2.25.1  
-pip install openmim -i https://pypi.tuna.tsinghua.edu.cn/simple  
+pip install openmim    
 mim install mmcv-full  
 mim install mmcls  
 cd mmdetection  
-pip install -r requirements/build.txt -i https://pypi.tuna.tsinghua.edu.cn/simple  
+pip install -r requirements/build.txt  
 pip install -v -e .  
 # Quick Start
 following ipynb  
