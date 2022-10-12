@@ -1,6 +1,6 @@
 _base_ = [
     '../_base_/models/faster_rcnn_r50_fpn.py',
-    '../_base_/datasets/rdd2022.py',
+    '../_base_/datasets/rdd2022_w12_2.py',
     '../_base_/schedules/schedule_1x.py', '../_base_/default_runtime.py'
 ]
 pretrained = 'checkpoints/swin_large_patch4_window12_384_22k.pth'  # noqa

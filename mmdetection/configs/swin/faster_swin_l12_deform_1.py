@@ -1,9 +1,9 @@
 _base_ = [
     '../_base_/models/faster_rcnn_r50_fpn.py',
-    '../_base_/datasets/rdd2022_w7.py',
+    '../_base_/datasets/rdd2022_w12_1.py',
     '../_base_/schedules/schedule_1x.py', '../_base_/default_runtime.py'
 ]
-pretrained = 'checkpoints/swin_large_patch4_window7_224_22k.pth'  # noqa
+pretrained = 'checkpoints/swin_large_patch4_window12_384_22k.pth'  # noqa
 model = dict(
     backbone=dict(
         _delete_=True,
@@ -11,7 +11,7 @@ model = dict(
         embed_dims=192,
         depths=[2, 2, 18, 2],
         num_heads=[6, 12, 24, 48],
-        window_size=7,
+        window_size=12,
         mlp_ratio=4,
         qkv_bias=True,
         qk_scale=None,
@@ -24,16 +24,16 @@ model = dict(
         convert_weights=True,
         init_cfg=dict(type='Pretrained', checkpoint=pretrained)),
     neck=dict(in_channels=[192, 384, 768, 1536]),
-    # roi_head=dict(
-    #     bbox_roi_extractor=dict(
-    #         type='SingleRoIExtractor',
-    #         roi_layer=dict(
-    #             _delete_=True,
-    #             type='ModulatedDeformRoIPoolPack',
-    #             output_size=7,
-    #             output_channels=256),
-    #         out_channels=256,
-    #         featmap_strides=[4, 8, 16, 32])),
+    roi_head=dict(
+        bbox_roi_extractor=dict(
+            type='SingleRoIExtractor',
+            roi_layer=dict(
+                _delete_=True,
+                type='ModulatedDeformRoIPoolPack',
+                output_size=7,
+                output_channels=256),
+            out_channels=256,
+            featmap_strides=[4, 8, 16, 32])),
     # train_cfg=dict(rcnn=dict(sampler=dict(type='OHEMSampler'))),
     )
 
