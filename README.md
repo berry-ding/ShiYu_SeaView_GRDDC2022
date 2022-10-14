@@ -12,7 +12,7 @@ pip install -r yolov5/requirements.txt
 pip install -r yolov7/requirements.txt  
 #mmdetection v2.25.0  
 pip install openmim    
-mim install mmcv-full  
+mim install mmcv-full==1.6.0
 mim install mmcls  
 cd mmdetection  
 pip install -r requirements/build.txt  
